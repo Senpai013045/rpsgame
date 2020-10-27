@@ -1,0 +1,33 @@
+.header {
+  margin: 0 auto;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.3rem solid var(--header-outline);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+.gameTitle {
+  text-align: left;
+  word-spacing: 900rem;
+  line-height: 0.9;
+}
+.scoreBox {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.scoreTitle {
+  color: var(--score-text);
+}
+.score {
+  color: var(--dark-text);
+  font-size: 3rem;
+  font-weight: 700;
+}

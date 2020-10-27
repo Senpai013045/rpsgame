@@ -1,0 +1,20 @@
+.button {
+  color: white;
+  background-color: transparent;
+  border: 0.2rem solid var(--header-outline);
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  display: block;
+  transition: all 0.2s ease;
+}
+.button:focus,
+.button:active {
+  outline: none;
+  color: var(--dark-text);
+  background-color: white;
+}

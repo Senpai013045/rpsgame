@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Button from "./components/button/button";
+import Gamearea from "./components/gamearea/gamearea";
+import Header from "./components/header/header";
+import Modal from "./components/modal/modal";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
+  const showModalHandler = () => {
+    setShowModal(true);
+  };
+
+  const hideModalHandler = () => {
+    setShowModal(false);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Modal show={showModal} hideModalHandler={hideModalHandler} />
+      <Header />
+      <Gamearea />
+      <Button click={showModalHandler}>Rules</Button>
     </div>
   );
 }
