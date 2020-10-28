@@ -6,7 +6,7 @@ const Header = (props) => {
       <div className={styles.gameTitle}>Rock Paper Scissors</div>
       <div className={styles.scoreBox}>
         <p className={styles.scoreTitle}>Score</p>
-        <p className={styles.score}>12</p>
+        <p className={styles.score}>{props.score}</p>
       </div>
     </div>
   );

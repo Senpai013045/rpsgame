@@ -8,9 +8,21 @@ const Gamearea = (props) => {
     <div className={styles.gameArea}>
       <img src={triangle} alt="triangle" className={styles.triangle} />
       <div className={styles.options}>
-        <Option option="paper" needsPos={true} />
-        <Option option="scissors" needsPos={true} />
-        <Option option="rock" needsPos={true} />
+        <Option
+          option="paper"
+          needsPos={true}
+          selectHandler={props.selectHandler}
+        />
+        <Option
+          option="scissors"
+          needsPos={true}
+          selectHandler={props.selectHandler}
+        />
+        <Option
+          option="rock"
+          needsPos={true}
+          selectHandler={props.selectHandler}
+        />
       </div>
     </div>
   );

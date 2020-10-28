@@ -6,7 +6,7 @@ import scissors from "../../../images/icon-scissors.svg";
 
 const Option = (props) => {
   let requested = props.option;
-  let classes = [styles.option];
+  let classes = [styles.option, props.blink ? styles.blink : ""];
   let imgsrc = "";
   switch (requested) {
     case "paper":
@@ -31,11 +31,14 @@ const Option = (props) => {
       }
       break;
     default:
-      return;
+      classes.push(styles.blank);
   }
   return (
-    <div className={classes.join(" ")}>
-      <img src={imgsrc} alt="" />
+    <div
+      className={classes.join(" ")}
+      onClick={() => props.selectHandler(props.option)}
+    >
+      <img src={imgsrc} alt={props.option} />
     </div>
   );
 };
