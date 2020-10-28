@@ -38,6 +38,11 @@ h4 {
 .close {
   color: hsl(230, 20%, 70%);
   font-size: 4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.close:hover {
+  transform: scale(1.5);
 }
 .imagecontainer {
   display: flex;

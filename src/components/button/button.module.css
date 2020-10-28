@@ -11,10 +11,19 @@
   margin: 0 auto;
   display: block;
   transition: all 0.2s ease;
+  /* to hide the blurry and trails */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  outline: 1px solid transparent;
 }
 .button:focus,
 .button:active {
   outline: none;
   color: var(--dark-text);
   background-color: white;
+}
+@media only screen and (min-width: 550px) {
+  .button {
+    float: right;
+  }
 }

@@ -8,6 +8,7 @@
   width: 18rem;
   margin: 7.5rem auto 10rem auto;
 }
+
 .triangle {
   width: 100%;
   position: relative;
@@ -20,4 +21,9 @@
   width: 100%;
   top: 0;
   left: 0;
+}
+@media (min-width: 550px) {
+  .gameArea {
+    width: 25rem;
+  }
 }

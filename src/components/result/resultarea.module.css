@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  margin: 7rem auto 5rem auto;
+  margin: 7rem auto 3rem auto;
 }
 .user,
 .house {
@@ -41,9 +41,14 @@ button {
   margin: 0 auto 5rem auto;
   transition: all 0.3s;
   transform: translateY(0rem) scale(1);
+  /* to hide the blurry and trails */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  outline: 1px solid transparent;
 }
 button:hover {
   transform: translateY(-0.5rem) scale(1.01);
+  color: hsl(349, 70%, 56%);
 }
 button:focus,
 button:active {
@@ -51,4 +56,9 @@ button:active {
 }
 button:active {
   transform: translateY(0.1rem) scale(0.95);
+}
+@media only screen and (min-width: 550px) {
+  .resultArea {
+    justify-content: space-around;
+  }
 }

@@ -56,3 +56,8 @@ body {
   width: 85%;
   margin: 0 auto;
 }
+@media only screen and (min-width: 550px) {
+  html {
+    font-size: 80%;
+  }
+}
